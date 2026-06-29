@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tree Services <!-- CONFIRM WITH CLIENT BEFORE LAUNCH --> | Rudy's Tree Service</title>
+  <meta name="description" content="Rudy's Tree Service offers professional tree removal, pruning and emergency arborist services. Certified Arborist, fully insured, free quotes. Call 0403 641 599." />
+  <link rel="canonical" href="https://www.rudystreeservices.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Rudy's Tree Service",
+    "telephone": "0403641599",
+    "email": "r.897@hotmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "<!-- CONFIRM WITH CLIENT BEFORE LAUNCH -->",
+      "addressRegion": "<!-- CONFIRM WITH CLIENT BEFORE LAUNCH -->",
+      "addressCountry": "AU"
+    },
+    "areaServed": "<!-- CONFIRM WITH CLIENT BEFORE LAUNCH -->",
+    "url": "https://www.rudystreeservices.com"
+  }
+  </script>
+
+  <style>
+    /* =============================================
+       CSS CUSTOM PROPERTIES
+       ============================================= */
+    :root {
+      --color-primary: #235735;
+      --color-secondary: #3db469;
+      --color-dark: #23282b;
+      --color-light: #f5f5f5;
+      --color-cta: #3db469;
+
+      --color-white: #ffffff;
+      --color-card-bg: #f9f9f9;
+      --color-text-body: #3a3f42;
+      --color-text-muted: #6b7280;
+      --color-border: #e5e7eb;
+      --color-shadow: rgba(0, 0, 0, 0.08);
+      --color-shadow-md: rgba(0, 0, 0, 0.14);
+      --color-star: #f59e0b;
+
+      --font-base: 'Poppins', sans-serif;
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 16px;
+      --radius-pill: 999px;
+
+      --space-1: 8px;
+      --space-2: 16px;
+      --space-3: 24px;
+      --space-4: 32px;
+      --space-5: 40px;
+      --space-6: 48px;
+      --space-8: 64px;
+      --space-10: 80px;
+      --space-12: 96px;
+
+      --nav-height: 72px;
+      --max-width: 1160px;
+      --transition-base: 0.25s ease;
+    }
+
+    /* =============================================
+       RESET & BASE
+       ============================================= */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-base);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--color-text-body);
+      background: var(--color-white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    button { cursor: pointer; border: none; background: none; font-family: inherit; }
+    input, select, textarea { font-family: inherit; }
+
+    /* =============================================
+       SCROLL ANIMATIONS
+       ============================================= */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* =============================================
+       CONTAINER & SHARED LAYOUT
+       ============================================= */
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--space-3);
+    }
+
+    .section { padding: var(--space-12) 0; }
+    .section-alt { background: var(--color-light); }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-secondary);
+      margin-bottom: var(--space-1);
+    }
+
+    .section-heading {
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--color-dark);
+    }
+
+    .section-subtext {
+      font-size: 17px;
+      color: var(--color-text-muted);
+      max-width: 580px;
+      line-height: 1.65;
+    }
+
+    /* =============================================
+       BUTTONS
+       ============================================= */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-1);
+      padding: 14px 28px;
+      border-radius: var(--radius-pill);
+      font-size: 15px;
+      font-weight: 600;
+      transition: background var(--transition-base), color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
+      white-space: nowrap;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px var(--color-shadow-md); }
+    .btn-primary { background: var(--color-secondary); color: var(--color-white); }
+    .btn-primary:hover { background: var(--color-primary); }
+    .btn-outline { background: transparent; color: var(--color-white); border: 2px solid var(--color-white); }
+    .btn-outline:hover { background: var(--color-white); color: var(--color-primary); }
+
+    /* =============================================
+       1. STICKY NAV
+       ============================================= */
+    #nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: var(--color-dark);
+      height: var(--nav-height);
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--space-3);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--color-white);
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    .nav-logo svg { color: var(--color-secondary); flex-shrink: 0; }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.82);
+      font-size: 14px;
+      font-weight: 600;
+      transition: color var(--transition-base);
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px; left: 0; right: 0;
+      height: 2px;
+      background: var(--color-secondary);
+      transform: scaleX(0);
+      transition: transform var(--transition-base);
+    }
+
+    .nav-links a:hover { color: var(--color-white); }
+    .nav-links a:hover::after { transform: scaleX(1); }
+
+    .nav-cta {
+      background: var(--color-secondary) !important;
+      color: var(--color-white) !important;
+      padding: 10px 20px;
+      border-radius: var(--radius-pill);
+      font-weight: 700 !important;
+      font-size: 14px !important;
+      transition: background var(--transition-base), transform var(--transition-base);
+    }
+    .nav-cta::after { display: none !important; }
+    .nav-cta:hover { background: var(--color-primary) !important; transform: translateY(-1px); }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: 8px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--color-white);
+      border-radius: 2px;
+      transition: transform var(--transition-base), opacity var(--transition-base);
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: var(--nav-height);
+      left: 0; right: 0;
+      background: var(--color-dark);
+      padding: var(--space-3);
+      flex-direction: column;
+      gap: var(--space-2);
+      z-index: 999;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+    .mobile-menu.open { display: flex; }
+
+    .mobile-menu a {
+      color: rgba(255,255,255,0.88);
+      font-size: 16px;
+      font-weight: 600;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      transition: color var(--transition-base);
+    }
+    .mobile-menu a:hover { color: var(--color-secondary); }
+    .mobile-menu .nav-cta { margin-top: var(--space-1); text-align: center; display: block; border-bottom: none; }
+
+    /* =============================================
+       2. HERO
+       ============================================= */
+    #hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      margin-top: var(--nav-height);
+      background: url('/images/hero/hero.jpg') center center / cover no-repeat;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(160deg, rgba(35,40,43,0.78) 0%, rgba(35,87,53,0.72) 100%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      text-align: center;
+      padding: var(--space-8) var(--space-3);
+    }
+
+    .hero-badges {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: var(--space-3);
+    }
+
+    .hero-badge {
+      background: var(--color-secondary);
+      color: var(--color-white);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+    }
+
+    .hero-title {
+      font-size: clamp(32px, 6vw, 58px);
+      font-weight: 700;
+      color: var(--color-white);
+      line-height: 1.15;
+      margin-bottom: var(--space-3);
+    }
+    .hero-title .accent { color: var(--color-secondary); }
+
+    .hero-sub {
+      font-size: 18px;
+      color: rgba(255,255,255,0.88);
+      max-width: 560px;
+      margin: 0 auto var(--space-5);
+      line-height: 1.65;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: var(--space-2);
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: var(--space-5);
+    }
+
+    .hero-trust {
+      display: flex;
+      gap: var(--space-4);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.9);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    /* =============================================
+       3. TRUST BAR
+       ============================================= */
+    #trust-bar {
+      background: var(--color-dark);
+      padding: var(--space-4) 0;
+    }
+
+    .trust-bar-grid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-6);
+      flex-wrap: wrap;
+    }
+
+    .trust-bar-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .trust-bar-item svg { color: var(--color-secondary); flex-shrink: 0; }
+    .trust-bar-item-label { font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.92); }
+
+    /* =============================================
+       4. SERVICES
+       ============================================= */
+    #services { padding: var(--space-12) 0; }
+
+    .services-header { text-align: center; margin-bottom: var(--space-8); }
+    .services-header .section-subtext { margin: var(--space-2) auto 0; }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-3);
+    }
+
+    .service-card {
+      background: var(--color-card-bg);
+      border-radius: var(--radius-lg);
+      padding: var(--space-4);
+      box-shadow: 0 2px 16px var(--color-shadow);
+      transition: box-shadow var(--transition-base), transform var(--transition-base);
+    }
+    .service-card:hover { box-shadow: 0 8px 32px var(--color-shadow-md); transform: translateY(-4px); }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      background: rgba(61,180,105,0.1);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: var(--space-2);
+      color: var(--color-secondary);
+    }
+
+    .service-card h3 { font-size: 17px; font-weight: 700; color: var(--color-dark); margin-bottom: var(--space-1); }
+    .service-card p { font-size: 14px; color: var(--color-text-muted); line-height: 1.6; }
+
+    /* =============================================
+       5. ABOUT
+       ============================================= */
+    #about { padding: var(--space-12) 0; }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-8);
+      align-items: center;
+    }
+
+    .about-image-wrap { position: relative; border-radius: var(--radius-lg); overflow: hidden; }
+
+    .about-image-wrap img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: var(--radius-lg);
+    }
+
+    .about-exp-badge {
+      position: absolute;
+      bottom: var(--space-3);
+      right: var(--space-3);
+      background: var(--color-secondary);
+      color: var(--color-white);
+      border-radius: var(--radius-md);
+      padding: var(--space-2) var(--space-3);
+      text-align: center;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+    .about-exp-badge .years { font-size: 40px; font-weight: 700; line-height: 1; display: block; }
+    .about-exp-badge .label { font-size: 12px; font-weight: 600; opacity: 0.92; }
+
+    .about-text .section-heading { margin: var(--space-2) 0 var(--space-3); }
+    .about-text p { color: var(--color-text-body); margin-bottom: var(--space-2); line-height: 1.7; }
+
+    .about-badges {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-2);
+      margin-top: var(--space-4);
+    }
+
+    .about-badge-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--color-white);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      box-shadow: 0 2px 10px var(--color-shadow);
+    }
+    .about-badge-item svg { color: var(--color-secondary); flex-shrink: 0; }
+    .about-badge-item span { font-size: 13px; font-weight: 600; color: var(--color-dark); }
+
+    /* =============================================
+       6. GALLERY
+       ============================================= */
+    #gallery { padding: var(--space-12) 0; }
+
+    .gallery-header { text-align: center; margin-bottom: var(--space-8); }
+    .gallery-header .section-subtext { margin: var(--space-2) auto 0; }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-2);
+    }
+
+    .gallery-cell {
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--color-primary), var(--color-dark));
+    }
+
+    .gallery-cell img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .gallery-cell:hover img { transform: scale(1.06); }
+
+    /* =============================================
+       7. TESTIMONIALS
+       ============================================= */
+    #testimonials { padding: var(--space-12) 0; }
+
+    .testimonials-header { text-align: center; margin-bottom: var(--space-8); }
+    .testimonials-header .section-subtext { margin: var(--space-2) auto 0; }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-3);
+    }
+
+    .testimonial-card {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      padding: var(--space-4);
+      box-shadow: 0 2px 16px var(--color-shadow);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stars { color: var(--color-star); font-size: 18px; letter-spacing: 2px; margin-bottom: var(--space-2); }
+
+    .testimonial-text {
+      font-size: 15px;
+      color: var(--color-text-body);
+      line-height: 1.7;
+      flex: 1;
+      margin-bottom: var(--space-3);
+      font-style: italic;
+    }
+
+    .testimonial-author { display: flex; align-items: center; gap: 12px; }
+
+    .author-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--color-secondary);
+      color: var(--color-white);
+      font-size: 15px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .author-name { font-weight: 700; font-size: 14px; color: var(--color-dark); }
+    .author-suburb { font-size: 13px; color: var(--color-text-muted); }
+
+    /* =============================================
+       8. CTA BAND
+       ============================================= */
+    #cta-band {
+      background: var(--color-primary);
+      padding: var(--space-10) 0;
+      text-align: center;
+    }
+
+    #cta-band h2 { font-size: clamp(26px, 4vw, 38px); font-weight: 700; color: var(--color-white); margin-bottom: var(--space-2); }
+    #cta-band p { font-size: 18px; color: rgba(255,255,255,0.88); margin-bottom: var(--space-5); }
+
+    .cta-band-buttons {
+      display: flex;
+      gap: var(--space-2);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* =============================================
+       9. CONTACT
+       ============================================= */
+    #contact { padding: var(--space-12) 0; }
+
+    .contact-header { text-align: center; margin-bottom: var(--space-8); }
+    .contact-header .section-subtext { margin: var(--space-2) auto 0; }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: var(--space-8);
+      align-items: start;
+    }
+
+    .contact-info h3 { font-size: 20px; font-weight: 700; color: var(--color-dark); margin-bottom: var(--space-4); }
+
+    .contact-info-list { display: flex; flex-direction: column; gap: var(--space-3); }
+
+    .contact-info-item { display: flex; align-items: flex-start; gap: 14px; }
+
+    .contact-info-icon {
+      width: 42px;
+      height: 42px;
+      background: rgba(61,180,105,0.1);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-secondary);
+      flex-shrink: 0;
+    }
+
+    .contact-info-item-text strong { display: block; font-size: 14px; font-weight: 700; color: var(--color-dark); margin-bottom: 2px; }
+    .contact-info-item-text span { font-size: 14px; color: var(--color-text-muted); }
+
+    .contact-form {
+      background: var(--color-card-bg);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5);
+      box-shadow: 0 4px 24px var(--color-shadow);
+    }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
+    .form-group { margin-bottom: var(--space-3); }
+
+    .form-group label { display: block; font-size: 13px; font-weight: 600; color: var(--color-dark); margin-bottom: 6px; }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-md);
+      font-size: 14px;
+      color: var(--color-dark);
+      background: var(--color-white);
+      transition: border-color var(--transition-base), box-shadow var(--transition-base);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--color-secondary);
+      box-shadow: 0 0 0 3px rgba(61,180,105,0.15);
+    }
+
+    .form-group textarea { min-height: 120px; resize: vertical; }
+
+    .form-submit {
+      width: 100%;
+      padding: 15px;
+      background: var(--color-secondary);
+      color: var(--color-white);
+      border-radius: var(--radius-pill);
+      font-size: 16px;
+      font-weight: 700;
+      transition: background var(--transition-base), transform var(--transition-base);
+    }
+    .form-submit:hover { background: var(--color-primary); transform: translateY(-2px); }
+    .form-submit:disabled { opacity: 0.7; cursor: not-allowed; transform: none; }
+
+    .form-message {
+      margin-top: var(--space-2);
+      padding: 12px 16px;
+      border-radius: var(--radius-md);
+      font-size: 14px;
+      font-weight: 600;
+      display: none;
+    }
+    .form-message.success { background: rgba(61,180,105,0.12); color: var(--color-primary); display: block; }
+    .form-message.error { background: rgba(220,38,38,0.1); color: #b91c1c; display: block; }
+
+    /* =============================================
+       10. FOOTER
+       ============================================= */
+    #footer {
+      background: var(--color-dark);
+      padding: var(--space-4) 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+
+    .footer-brand { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.75); font-size: 14px; font-weight: 600; }
+    .footer-brand svg { color: var(--color-secondary); }
+    .footer-credit { color: rgba(255,255,255,0.5); font-size: 13px; }
+    .footer-credit a { color: var(--color-secondary); transition: color var(--transition-base); }
+    .footer-credit a:hover { color: var(--color-white); }
+
+    /* =============================================
+       RESPONSIVE — 1100px
+       ============================================= */
+    @media (max-width: 1100px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+      .contact-grid { grid-template-columns: 1fr 1.2fr; gap: var(--space-5); }
+    }
+
+    /* =============================================
+       RESPONSIVE — 768px
+       ============================================= */
+    @media (max-width: 768px) {
+      :root { --nav-height: 64px; }
+
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+
+      .services-grid { grid-template-columns: 1fr; }
+
+      .about-grid { grid-template-columns: 1fr; gap: var(--space-5); }
+      .about-image-wrap img { height: 340px; }
+
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .testimonials-grid { grid-template-columns: 1fr; }
+
+      .contact-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+
+      .hero-trust { gap: var(--space-2); }
+      .trust-bar-grid { gap: var(--space-3); }
+
+      .footer-inner { flex-direction: column; text-align: center; }
+
+      .about-badges { grid-template-columns: 1fr 1fr; }
+      .section { padding: var(--space-10) 0; }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+      .hero-buttons { flex-direction: column; align-items: center; }
+      .hero-buttons .btn { width: 100%; justify-content: center; }
+      .about-badges { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== 1. NAV ===== -->
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Rudy's Tree Service - Home">
+        <svg width="26" height="26" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <path d="M14 2C10 2 7 5.5 7 9c0 2.5 1.2 4.7 3 6.1V18H9v2h2v4h6v-4h2v-2h-1v-2.9c1.8-1.4 3-3.6 3-6.1C21 5.5 18 2 14 2Z" fill="currentColor"/>
+        </svg>
+        Rudy's Tree Service
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="tel:0403641599" class="nav-cta">0403 641 599</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="#hero" class="mobile-nav-link">Home</a>
+    <a href="#services" class="mobile-nav-link">Services</a>
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#gallery" class="mobile-nav-link">Gallery</a>
+    <a href="#testimonials" class="mobile-nav-link">Reviews</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <a href="tel:0403641599" class="nav-cta">Call 0403 641 599</a>
+  </nav>
+
+  <!-- ===== 2. HERO ===== -->
+  <section id="hero" aria-labelledby="hero-title">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+
+      <div class="hero-badges reveal">
+        <span class="hero-badge">Certified Arborist</span>
+        <span class="hero-badge">Certificate III in Arboriculture</span>
+      </div>
+
+      <h1 id="hero-title" class="hero-title reveal reveal-delay-1">
+        Professional Tree Services<br>
+        <span class="accent">You Can Trust</span>
+      </h1>
+
+      <p class="hero-sub reveal reveal-delay-2">
+        Certified Arborist with over 10 years of experience servicing residential, rural and commercial properties.
+      </p>
+
+      <div class="hero-buttons reveal reveal-delay-3">
+        <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+        <a href="tel:0403641599" class="btn btn-outline">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.06 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
+          Call 0403 641 599
+        </a>
+      </div>
+
+      <div class="hero-trust reveal reveal-delay-4">
+        <div class="hero-trust-item">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Certified Arborist
+        </div>
+        <div class="hero-trust-item">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Fully Insured
+        </div>
+        <div class="hero-trust-item">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          10+ Years Experience
+        </div>
+        <div class="hero-trust-item">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          24/7 Emergency Service
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== 3. TRUST BAR ===== -->
+  <section id="trust-bar" aria-label="Trust indicators">
+    <div class="container">
+      <div class="trust-bar-grid">
+        <div class="trust-bar-item reveal">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span class="trust-bar-item-label">Certified Arborist</span>
+        </div>
+        <div class="trust-bar-item reveal reveal-delay-1">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          <span class="trust-bar-item-label">Fully Insured</span>
+        </div>
+        <div class="trust-bar-item reveal reveal-delay-2">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span class="trust-bar-item-label">10+ Years Experience</span>
+        </div>
+        <div class="trust-bar-item reveal reveal-delay-3">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <span class="trust-bar-item-label">24/7 Emergency Service</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. SERVICES ===== -->
+  <section id="services" class="section">
+    <div class="container">
+      <header class="services-header">
+        <p class="section-label reveal">What We Do</p>
+        <h2 class="section-heading reveal reveal-delay-1">Our Services</h2>
+        <p class="section-subtext reveal reveal-delay-2">From routine pruning to emergency callouts, we handle every job with the same level of care and professionalism.</p>
+      </header>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 017 7c0 4-3 7-7 7s-7-3-7-7a7 7 0 017-7z"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/></svg>
+          </div>
+          <h3>Tree Removal</h3>
+          <p>Safe removal of trees of any size, from small garden trees to large hazardous specimens.</p>
+        </article>
+
+        <article class="service-card reveal reveal-delay-1">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v12"/><path d="M18 9a3 3 0 000-6H6"/><path d="M6 15a6 6 0 0012 0"/></svg>
+          </div>
+          <h3>Tree Pruning</h3>
+          <p>Improve tree health, appearance and safety with expert pruning and crown management.</p>
+        </article>
+
+        <article class="service-card reveal reveal-delay-2">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3>Hazardous Tree Removal</h3>
+          <p>Removal of dangerous or storm-damaged trees with a focus on safety and efficiency.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </div>
+          <h3>Vegetation &amp; Block Clearing</h3>
+          <p>Complete clearing for new builds, acreage and developments.</p>
+        </article>
+
+        <article class="service-card reveal reveal-delay-1">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 002 1.58h9.78a2 2 0 001.95-1.57l1.65-7.43H5.12"/></svg>
+          </div>
+          <h3>Wood Chipping</h3>
+          <p>Fast on-site chipping with professional wood chipping equipment.</p>
+        </article>
+
+        <article class="service-card reveal reveal-delay-2">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3>Emergency Tree Services</h3>
+          <p>24-hour emergency response after storms and dangerous tree failures.</p>
+        </article>
+
+        <article class="service-card reveal" style="grid-column: 1 / -1; max-width: 380px; margin: 0 auto; width: 100%;">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-3.87 4-6 7-6 10a6 6 0 0012 0c0-3-2.13-6-6-10z"/><path d="M12 12c0 2-1 4-2 5"/></svg>
+          </div>
+          <h3>Firewood &amp; Wood Chips</h3>
+          <p>Quality firewood and wood chips available for residential and commercial use.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. ABOUT ===== -->
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-image-wrap reveal">
+          <img src="/images/about/aboutus.jpg" alt="Rudy's Tree Service operator standing beside a Kobelco excavator on a freshly cleared property" loading="lazy" />
+          <div class="about-exp-badge">
+            <span class="years">10+</span>
+            <span class="label">Years Experience</span>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <p class="section-label reveal">About Us</p>
+          <h2 class="section-heading reveal reveal-delay-1">Your Local Tree Specialist</h2>
+          <p class="reveal reveal-delay-2">Rudy's Tree Service is operated by a Certified Arborist (Certificate III in Arboriculture) with over 10 years of industry experience.</p>
+          <p class="reveal reveal-delay-2">From small backyard pruning jobs through to complete block clearing and large hazardous tree removals, every project is completed safely, efficiently and professionally.</p>
+          <p class="reveal reveal-delay-3">Whether you need routine maintenance or urgent storm damage assistance, Rudy's Tree Service is available 24 hours a day, 7 days a week.</p>
+
+          <div class="about-badges reveal reveal-delay-4">
+            <div class="about-badge-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Certified Arborist</span>
+            </div>
+            <div class="about-badge-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+              <span>Fully Insured</span>
+            </div>
+            <div class="about-badge-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Small &amp; Large Jobs Welcome</span>
+            </div>
+            <div class="about-badge-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              <span>24/7 Emergency Response</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. GALLERY ===== -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <header class="gallery-header">
+        <p class="section-label reveal">Our Work</p>
+        <h2 class="section-heading reveal reveal-delay-1">Project Gallery</h2>
+        <p class="section-subtext reveal reveal-delay-2">A snapshot of recent jobs completed across residential, rural and commercial properties.</p>
+      </header>
+
+      <div class="gallery-grid">
+        <div class="gallery-cell reveal">
+          <img src="/images/gallery/gallery1.jpg" alt="Arborist at height beside a Bandit wood chipper and Kobelco excavator during large tree removal" loading="lazy" />
+        </div>
+        <div class="gallery-cell reveal reveal-delay-1">
+          <img src="/images/gallery/gallery3.jpg" alt="Large eucalyptus trees alongside a residential coastal property" loading="lazy" />
+        </div>
+        <div class="gallery-cell reveal reveal-delay-2">
+          <img src="/images/gallery/gallery4.jpg" alt="Fresh wood chips produced from professional on-site chipping" loading="lazy" />
+        </div>
+        <div class="gallery-cell reveal">
+          <img src="/images/gallery/gallery5.jpg" alt="Split hardwood firewood ready for delivery" loading="lazy" />
+        </div>
+        <div class="gallery-cell reveal reveal-delay-1">
+          <img src="/images/gallery/gallery6.jpg" alt="Timber stools crafted from tree stumps in a cleared forest setting" loading="lazy" />
+        </div>
+        <div class="gallery-cell reveal reveal-delay-2">
+          <img src="/images/gallery/gallery7.jpg" alt="Arborist climbing a large dead tree near powerlines for safe hazardous removal" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 7. TESTIMONIALS ===== -->
+  <section id="testimonials" class="section section-alt">
+    <div class="container">
+      <header class="testimonials-header">
+        <p class="section-label reveal">Customer Reviews</p>
+        <h2 class="section-heading reveal reveal-delay-1">What Our Clients Say</h2>
+        <p class="section-subtext reveal reveal-delay-2">We take pride in every job we complete. Here's what some of our happy customers have to say.</p>
+      </header>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card reveal">
+          <div class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"Fantastic service. Arrived on time, cleaned everything up and did an amazing job. Would highly recommend Rudy to anyone."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">SM</div>
+            <div>
+              <p class="author-name">Sarah M</p>
+              <p class="author-suburb"><!-- CONFIRM WITH CLIENT BEFORE LAUNCH --></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card reveal reveal-delay-1">
+          <div class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"Very professional and affordable. Rudy communicated clearly and delivered exactly what was promised. Highly recommend for any tree work."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">JT</div>
+            <div>
+              <p class="author-name">James T</p>
+              <p class="author-suburb"><!-- CONFIRM WITH CLIENT BEFORE LAUNCH --></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card reveal reveal-delay-2">
+          <div class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"Responded quickly after storm damage and made everything safe within hours. Cannot fault the service - absolute lifesaver!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">LK</div>
+            <div>
+              <p class="author-name">Lisa K</p>
+              <p class="author-suburb"><!-- CONFIRM WITH CLIENT BEFORE LAUNCH --></p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 8. CTA BAND ===== -->
+  <section id="cta-band" aria-label="Call to action">
+    <div class="container">
+      <h2 class="reveal">Need Tree Work Done?</h2>
+      <p class="reveal reveal-delay-1">Get in touch today for a free quote or emergency assistance.</p>
+      <div class="cta-band-buttons reveal reveal-delay-2">
+        <a href="tel:0403641599" class="btn btn-outline">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.06 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
+          Call Now
+        </a>
+        <a href="#contact" class="btn btn-primary">Request Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 9. CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <header class="contact-header">
+        <h2 class="section-heading reveal">Contact Us</h2>
+        <p class="section-subtext reveal reveal-delay-1">Ready for a free quote? Fill in the form and we'll be in touch shortly.</p>
+      </header>
+
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <h3>Business Information</h3>
+          <ul class="contact-info-list">
+            <li class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.06 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
+              </div>
+              <div class="contact-info-item-text">
+                <strong>Phone</strong>
+                <span><a href="tel:0403641599" style="color: var(--color-text-muted);">0403 641 599</a></span>
+              </div>
+            </li>
+            <li class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="contact-info-item-text">
+                <strong>Hours</strong>
+                <span>24 Hours - 7 Days <!-- CONFIRM WITH CLIENT --></span>
+              </div>
+            </li>
+            <li class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="contact-info-item-text">
+                <strong>Qualification</strong>
+                <span>Certified Arborist - Certificate III in Arboriculture</span>
+              </div>
+            </li>
+            <li class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+              </div>
+              <div class="contact-info-item-text">
+                <strong>Insurance</strong>
+                <span>Fully Insured</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="reveal reveal-delay-1">
+          <form class="contact-form" id="contact-form" novalidate>
+            <input type="hidden" name="access_key" value="c898e546-5c35-4a3e-ba3a-fd5e7cae5100" />
+            <input type="hidden" name="subject" value="Rudy's Tree Service - Contact Page Enquiry" />
+            <input type="hidden" name="from_name" value="Rudy's Tree Service Website" />
+            <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Full Name *</label>
+                <input type="text" id="contact-name" name="name" required placeholder="Your full name" autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="contact-phone">Phone Number *</label>
+                <input type="tel" id="contact-phone" name="phone" required placeholder="04xx xxx xxx" autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email Address *</label>
+              <input type="email" id="contact-email" name="email" required placeholder="your@email.com" autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-service">Service Required *</label>
+              <select id="contact-service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="Tree Removal">Tree Removal</option>
+                <option value="Tree Pruning">Tree Pruning</option>
+                <option value="Hazardous Tree Removal">Hazardous Tree Removal</option>
+                <option value="Vegetation and Block Clearing">Vegetation &amp; Block Clearing</option>
+                <option value="Wood Chipping">Wood Chipping</option>
+                <option value="Emergency Tree Services">Emergency Tree Services</option>
+                <option value="Firewood and Wood Chips">Firewood &amp; Wood Chips</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message (optional)</label>
+              <textarea id="contact-message" name="message" placeholder="Tell us about your project..."></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">Send Enquiry</button>
+            <div class="form-message" id="contact-status" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 10. FOOTER ===== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <svg width="18" height="18" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <path d="M14 2C10 2 7 5.5 7 9c0 2.5 1.2 4.7 3 6.1V18H9v2h2v4h6v-4h2v-2h-1v-2.9c1.8-1.4 3-3.6 3-6.1C21 5.5 18 2 14 2Z" fill="currentColor"/>
+          </svg>
+          Rudy's Tree Service
+        </div>
+        <p class="footer-credit">Website by <a href="https://www.itscold.com.au" target="_blank" rel="noopener noreferrer">Go Polar Creative</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', String(open));
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    document.addEventListener('click', e => {
+      if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Contact form
+    document.getElementById('contact-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('.form-submit');
+      const status = document.getElementById('contact-status');
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      status.className = 'form-message';
+      status.textContent = '';
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(Object.fromEntries(new FormData(this)))
+        });
+        const json = await res.json();
+        if (json.success) {
+          status.textContent = "Thanks! We'll be in touch within 24 hours.";
+          status.className = 'form-message success';
+          this.reset();
+        } else {
+          throw new Error();
+        }
+      } catch {
+        status.textContent = 'Something went wrong. Please call us directly.';
+        status.className = 'form-message error';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Send Enquiry';
+      }
+    });
+  </script>
+
+</body>
+</html>
